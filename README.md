@@ -1,77 +1,51 @@
-# Employee Performance Mapping (SQL Project)
+# Employee Performance & Compensation Analysis (SQL Project)
 
-## Overview
-This project analyses employee performance, salary structure, reporting hierarchy, and workforce distribution. It demonstrates how SQL can be used not only for querying data, but also for solving practical business problems and generating actionable insights.
+## Objective
 
-## Objectives
-The main goal of this project is to explore employee data and answer key business questions related to:
+Analyze employee performance, compensation, and organizational structure 
+to identify inefficiencies and opportunities for improving workforce effectiveness.
 
-- performance distribution across the organization  
-- salary differences between departments and roles  
-- reporting structure and manager relationships  
-- experience-based segmentation  
+---
+
+## Approach (SQL Analysis)
+
+* Performed data validation and cleaning
+* Analyzed performance, salary, and workforce distribution across departments and roles
+* Explored reporting structure and manager relationships
+* Applied SQL techniques: aggregations, CTEs, window functions
+
+---
+
+##  Key Findings
+
+* Higher experience is positively associated with performance ratings
+* Salary varies significantly across departments, with some roles earning substantially above departmental averages
+* High-performing employees are unevenly distributed across teams
+* Some employees earn significantly above departmental averages
+* Data quality issues (e.g., missing managers) impact reporting accuracy
+
+---
+
+##  Business Impact
+
+* Helps identify opportunities for salary adjustment and compensation alignment
+* Enables identification of high-performing teams and employees
+* Highlights potential management inefficiencies
+* Improves reliability of HR reporting and decision-making
+
+
+---
 
 ## Dataset
 
-TThe project uses two datasets:
-- `emp_record_table.csv` — employee information
-- `data_science_team.csv` — team/department mapping.
+The analysis uses two datasets:
 
-Before performing the analysis, a data quality check was conducted to identify potential issues, including:
+* `emp_record_table.csv` — employee-level data (performance, salary, experience, etc.)
+* `data_science_team.csv` — department and team mapping
 
-- duplicate employee IDs  
-- missing or null values  
-- invalid salary or experience values  
-- inconsistent text formatting  
-- missing or incorrect manager references  
 
-## SQL Skills Demonstrated
-This project demonstrates the use of:
+---
 
-- data filtering and sorting  
-- aggregations and `GROUP BY`  
-- `CASE WHEN` logic  
-- Common Table Expressions (CTE)  
-- window functions (`OVER`, `PARTITION BY`)  
-- ranking functions  
-- data cleaning and validation techniques  
-- structured, business-oriented query design  
-
-## Business Questions
-The project explores several practical questions:
-
-- Is the employee dataset complete and usable for analysis?
-- How are employees distributed by department, rating, geography, and experience?
-- Which employees are low, medium, or high performers?
-- Who are the managers and how many direct reports do they have?
-- How do salary levels vary across roles, departments, countries, and continents?
-- How does experience relate to performance and employee segmentation? 
-
-## Key Insights
-
-- Employees with higher experience levels tend to have better performance ratings, indicating a positive relationship between experience and productivity.
-
-- Salary levels vary significantly across departments, suggesting differences in role specialization and compensation strategies.
-
-- High-performing employees are unevenly distributed, which may indicate differences in team effectiveness or management quality.
-
-- Some employees earn significantly above their departmental average, highlighting potential senior roles or compensation inconsistencies.
-
-- Data quality checks revealed missing manager assignments and inconsistencies that could affect reporting accuracy.
-
-- Salary distribution differs across groups, indicating structural variation in compensation.
-
-- Certain managers oversee a large number of employees, which may impact team performance and management effectiveness.
-
-## Business Impact
-
-The analysis can support:
-
-- HR decision-making on salary adjustments and compensation strategy  
-- identification of high-performing teams and employees  
-- improvement of organizational structure and reporting lines  
-- detection and resolution of data quality issues  
-- more reliable internal reporting and analytics  
 
 ## Project Structure
 
@@ -85,13 +59,5 @@ employee-performance-mapping-sql/
     └── employee_performance_mapping_portfolio.sql
 ```
 
-## Future Improvements
+---
 
-* Add a dashboard (Tableau / Power BI) to visualize key insights
-* Quantify insights with percentages and performance metrics
-* Expand analysis to include employee attrition or promotion trends
-* Integrate Python for deeper statistical analysis
-  
-
-## Notes
-This repository is intended as a portfolio project demonstrating practical SQL skills in a structured business context. It focuses on combining data analysis with real-world problem-solving and clear communication of insights.
